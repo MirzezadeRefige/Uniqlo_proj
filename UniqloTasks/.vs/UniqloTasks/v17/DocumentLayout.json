@@ -1,30 +1,114 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\dataaccess\\uniqlodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\dataaccess\\uniqlodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\viewmodels\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\viewmodels\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\dataaccess\\uniqlodbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\dataaccess\\uniqlodbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\models\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\uniqlotasks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\uniqlotasks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\migrations\\uniqlodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\migrations\\uniqlodbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\dataaccess\\uniqlodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\dataaccess\\uniqlodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\viewmodels\\sliders\\slidercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\viewmodels\\sliders\\slidercreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo\\uniqlotasks\\uniqlotasks\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\uniqlotasks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\uniqlotasks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\migrations\\20241122152132_slidertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\migrations\\20241122152132_slidertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|c:\\users\\acer\\onedrive\\masa\u00FCst\u00FC\\uniqlo_proj\\uniqlotasks\\uniqlotasks\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F3F171-06A5-4AC6-B1C3-65B815C45353}|UniqloTasks\\UniqloTasks.csproj|solutionrelative:uniqlotasks\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,80 +123,334 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UniqloDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDBContext.cs",
-              "RelativeDocumentMoniker": "UniqloTasks\\DataAccess\\UniqloDBContext.cs",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDBContext.cs",
-              "RelativeToolTip": "UniqloTasks\\DataAccess\\UniqloDBContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\ViewModels\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\ViewModels\\Products\\Product.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\ViewModels\\Products\\Product.cs",
+              "RelativeToolTip": "UniqloTasks\\ViewModels\\Products\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:57:24.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UniqloTasks.csproj",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
-              "RelativeDocumentMoniker": "UniqloTasks\\UniqloTasks.csproj",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
-              "RelativeToolTip": "UniqloTasks\\UniqloTasks.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-21T22:54:52.402Z",
+              "WhenOpened": "2024-11-22T23:23:45.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Slider.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Models\\Slider.cs",
-              "RelativeDocumentMoniker": "UniqloTasks\\Models\\Slider.cs",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Models\\Slider.cs",
-              "RelativeToolTip": "UniqloTasks\\Models\\Slider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:51:35.104Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T23:20:09.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Models\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "UniqloTasks\\Models\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Models\\BaseEntity.cs",
-              "RelativeToolTip": "UniqloTasks\\Models\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:49:56.116Z",
+              "WhenOpened": "2024-11-22T23:15:33.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Program.cs",
-              "RelativeDocumentMoniker": "UniqloTasks\\Program.cs",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Program.cs",
-              "RelativeToolTip": "UniqloTasks\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Product.cs",
+              "RelativeToolTip": "UniqloTasks\\Models\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:46:54.089Z",
+              "WhenOpened": "2024-11-22T22:51:47.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "UniqloTasks\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo\\UniqloTasks\\UniqloTasks\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "UniqloTasks\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Brand.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Models\\Brand.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Brand.cs",
+              "RelativeToolTip": "UniqloTasks\\Models\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:46:31.298Z",
+              "WhenOpened": "2024-11-22T22:48:19.443Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T21:27:59.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UniqloDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Migrations\\UniqloDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Migrations\\UniqloDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Migrations\\UniqloDbContextModelSnapshot.cs",
+              "RelativeToolTip": "UniqloTasks\\Migrations\\UniqloDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T21:03:09.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UniqloDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDbContextFactory.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\DataAccess\\UniqloDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDbContextFactory.cs",
+              "RelativeToolTip": "UniqloTasks\\DataAccess\\UniqloDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:15:35.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Slider.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Models\\Slider.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\Slider.cs",
+              "RelativeToolTip": "UniqloTasks\\Models\\Slider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:51:35.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UniqloTasks\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T14:56:24.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T22:05:15.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T18:30:07.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T20:24:48.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:30:12.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T21:28:11.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T21:19:38.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UniqloDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDBContext.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\DataAccess\\UniqloDBContext.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\DataAccess\\UniqloDBContext.cs",
+              "RelativeToolTip": "UniqloTasks\\DataAccess\\UniqloDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:57:24.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T18:30:36.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:27:45.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SliderCreateVM.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\ViewModels\\Sliders\\SliderCreateVM.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\ViewModels\\Sliders\\SliderCreateVM.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\ViewModels\\Sliders\\SliderCreateVM.cs",
+              "RelativeToolTip": "UniqloTasks\\ViewModels\\Sliders\\SliderCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:34:25.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Program.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Program.cs",
+              "RelativeToolTip": "UniqloTasks\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:46:54.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "UniqloTasks\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "UniqloTasks\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T17:52:58.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UniqloTasks.csproj",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
+              "RelativeDocumentMoniker": "UniqloTasks\\UniqloTasks.csproj",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
+              "RelativeToolTip": "UniqloTasks\\UniqloTasks.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-21T22:54:52.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\appsettings.json",
+              "RelativeDocumentMoniker": "UniqloTasks\\appsettings.json",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\appsettings.json",
+              "RelativeToolTip": "UniqloTasks\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-22T15:11:07.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "UniqloTasks\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:46:31.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20241122152132_sliderTable.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Migrations\\20241122152132_sliderTable.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Migrations\\20241122152132_sliderTable.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Migrations\\20241122152132_sliderTable.cs",
+              "RelativeToolTip": "UniqloTasks\\Migrations\\20241122152132_sliderTable.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:21:33.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "UniqloTasks\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\ACER\\OneDrive\\Masa\u00FCst\u00FC\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "UniqloTasks\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:49:56.116Z"
             }
           ]
         }

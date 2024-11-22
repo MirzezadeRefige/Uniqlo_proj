@@ -24984,5 +24984,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"87216"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 21 Nov 2024 17:56:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/sliders/c1iw1ctr.zxm.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\sliders\c1iw1ctr.zxm.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mD5JrTnEXbQNCPI04\u002BdZVesKSMebEA3p8/bK6nltWr8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"7419"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mD5JrTnEXbQNCPI04\u002BdZVesKSMebEA3p8/bK6nltWr8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 22:32:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/sliders/c1iw1ctr.zxm.og4s5lq8ot.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\sliders\c1iw1ctr.zxm.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"og4s5lq8ot"},{"Name":"integrity","Value":"sha256-mD5JrTnEXbQNCPI04\u002BdZVesKSMebEA3p8/bK6nltWr8="},{"Name":"label","Value":"_content/UniqloTasks/imgs/sliders/c1iw1ctr.zxm.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7419"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mD5JrTnEXbQNCPI04\u002BdZVesKSMebEA3p8/bK6nltWr8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 22:32:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/sliders/ljt5onwu.bpf.m1z5oggu86.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\sliders\ljt5onwu.bpf.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m1z5oggu86"},{"Name":"integrity","Value":"sha256-qhgybaup/Ad4PHjlW1WR7dgrr\u002BfQKgm38gsbaX2jICA="},{"Name":"label","Value":"_content/UniqloTasks/imgs/sliders/ljt5onwu.bpf.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"49764"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022qhgybaup/Ad4PHjlW1WR7dgrr\u002BfQKgm38gsbaX2jICA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 20:13:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/sliders/ljt5onwu.bpf.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\sliders\ljt5onwu.bpf.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qhgybaup/Ad4PHjlW1WR7dgrr\u002BfQKgm38gsbaX2jICA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"49764"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022qhgybaup/Ad4PHjlW1WR7dgrr\u002BfQKgm38gsbaX2jICA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 20:13:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

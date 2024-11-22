@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace UniqloTasks
 {
     public class Program
@@ -8,7 +10,10 @@ namespace UniqloTasks
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddDbContext<UniqloDbContext>(opt =>
+            {
+                opt.UseSqlServer(builder.Configuration["ConnectionStrings:MSSql"]);
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
