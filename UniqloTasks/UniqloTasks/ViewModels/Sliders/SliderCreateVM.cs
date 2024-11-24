@@ -1,5 +1,4 @@
 ﻿using Microsoft.Build.Framework;
-
 using Xunit.Sdk;
 
 namespace UniqloTasks.ViewModels.Sliders
@@ -13,4 +12,6 @@ namespace UniqloTasks.ViewModels.Sliders
         public string? Link { get; set; }
         public IFormFile File { get; set; }
     }
+    
 }
+

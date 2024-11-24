@@ -1,5 +1,4 @@
-﻿
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
@@ -34,7 +33,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Body main wrapper start -->
-    <div class="wrapper wrap__box__style--1">
+    <div class="wrapper wrap__box__style--1" style="padding-bottom: 0;">
         <!-- Start Header Style -->
         <header id="header" class="htc-header header--3 bg__white">
             <!-- Start Mainmenu Area -->
@@ -53,59 +52,17 @@
                             <nav class="mainmenu__nav d-none d-lg-block">
                                 <ul class="main__menu">
                                     <li><a asp-action="Index" asp-controller="Home">Home</a></li>
-                                    <li><a asp-action="About" asp-controller="About">About</a></li>
-                                    <!-- <li><a href="shop.html">Shop</a> </li> -->
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a asp-action="About" asp-controller="Home">About</a></li>
                                     <li><a href="contact.html">contact</a></li>
-
-
-                                    <!-- End Single Mega MEnu -->
-                                    <!-- Start Single Mega MEnu -->
-                                    <!-- End Single Mega MEnu -->
-                                </ul>
-                                </li>
-
                                 </ul>
                             </nav>
                             <div class="mobile-menu clearfix  d-block d-lg-none">
                                 <nav id="mobile_dropdown">
                                     <ul>
-                                        <li>
-                                            <a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a asp-action="Index" asp-controller="Home">Home 1</a></li>
-                                                <li><a href="index-2.html">Home 2</a></li>
-                                                <li><a href="index-3.html">Home 3</a></li>
-                                                <li><a href="index-4.html">Home 4</a></li>
-                                                <li><a href="index-5.html">Home 5</a></li>
-                                                <li><a href="index-6.html">Home 6</a></li>
-                                                <li><a href="index-7.html">Home 7</a></li>
-                                                <li><a href="index-8.html">Home 8</a></li>
-                                                <li><a href="index-9.html">Home 9</a></li>
-                                                <li><a href="index-10.html">Home 10</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a asp-action="About" asp-controller="About">About</a></li>
-                                        <li>
-                                            <a href="blog.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="about.html">about</a></li>
-                                                <li><a href="shop.html">shop</a></li>
-                                                <li><a href="shop-sidebar.html">shop sidebar</a></li>
-                                                <li><a href="product-details.html">product details</a></li>
-                                                <li><a href="cart.html">cart</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="team.html">team</a></li>
-                                                <li><a href="login-register.html">login & register</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                                        <li><a href="#">pages</a></li>
+                                        <li><a asp-action="About" asp-controller="Home">About</a></li>
                                         <li><a href="contact.html">contact</a></li>
                                     </ul>
                                 </nav>
@@ -127,98 +84,149 @@
         <!-- End Header Style -->
 
         <div class="body__overlay"></div>
-        @RenderBody()
-        <!-- Start Footer Area -->
-        <footer class="htc__foooter__area bg__cat--2 footer--4">
-            <div class="container-fluid">
-                <div class="footer__container clearfix">
-                    <div class="row">
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-6 col-lg-3 col-sm-6">
-                            <div class="ft__widget">
-                                <div class="ft__logo">
-                                    <a href="index.html">
-                                        <img src="~/assets/images/logo/uniqlo.png" alt="footer logo">
-                                    </a>
-                                </div>
-                                <div class="footer__details">
-                                    <p>Get 10% discount with notified about the latest news and updates.</p>
-                                </div>
+        <!-- Start Cart Panel -->
+        <div class="shopping__cart">
+            <div class="shopping__cart__inner">
+                <div class="offsetmenu__close__btn">
+                    <a href="#"><i class="zmdi zmdi-close"></i></a>
+                </div>
+                <div class="shp__cart__wrap">
+                    <div class="shp__single__product">
+                        <div class="shp__pro__thumb">
+                            <a href="#">
+                                <img src="~/assets/images/product/sm-img/1.jpg" alt="product images">
+                            </a>
+                        </div>
+                        <div class="shp__pro__details">
+                            <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                            <span class="quantity">QTY: 1</span>
+                            <span class="shp__price">$105.00</span>
+                        </div>
+                        <div class="remove__btn">
+                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                        </div>
+                    </div>
+                    <div class="shp__single__product">
+                        <div class="shp__pro__thumb">
+                            <a href="#">
+                                <img src="~/assets/images/product/sm-img/2.jpg" alt="product images">
+                            </a>
+                        </div>
+                        <div class="shp__pro__details">
+                            <h2><a href="product-details.html">Brone Candle</a></h2>
+                            <span class="quantity">QTY: 1</span>
+                            <span class="shp__price">$25.00</span>
+                        </div>
+                        <div class="remove__btn">
+                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="shoping__total">
+                    <li class="subtotal">Subtotal:</li>
+                    <li class="total__price">$130.00</li>
+                </ul>
+                <ul class="shopping__btn">
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Cart Panel -->
+    </div>
+    <!-- End Offset Wrapper -->
+    @RenderBody()
+    <!-- Start Footer Area -->
+    <footer class="htc__foooter__area bg__cat--2 footer--4">
+        <div class="container-fluid">
+            <div class="footer__container clearfix">
+                <div class="row">
+                    <!-- Start Single Footer Widget -->
+                    <div class="col-md-6 col-lg-3 col-sm-6">
+                        <div class="ft__widget">
+                            <div class="ft__logo">
+                                <a href="index.html">
+                                    <img src="~/assets/images/logo/uniqlo.png" alt="footer logo">
+                                </a>
+                            </div>
+                            <div class="footer__details">
+                                <p>Get 10% discount with notified about the latest news and updates.</p>
                             </div>
                         </div>
-                        <!-- End Single Footer Widget -->
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-6 col-lg-3 offset-lg-1 col-sm-6 smb-30 xmt-30">
-                            <div class="ft__widget">
-                                <h2 class="ft__title">Newsletter</h2>
-                                <div class="newsletter__form">
-                                    <div class="input__box">
-                                        <div id="mc_embed_signup">
-                                            <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                                <div id="mc_embed_signup_scroll" class="htc__news__inner">
-                                                    <div class="news__input">
-                                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
-                                                    </div>
-                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
-                                                    <div class="clearfix subscribe__btn">
-                                                        <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
-
-                                                    </div>
+                    </div>
+                    <!-- End Single Footer Widget -->
+                    <!-- Start Single Footer Widget -->
+                    <div class="col-md-6 col-lg-3 offset-lg-1 col-sm-6 smb-30 xmt-30">
+                        <div class="ft__widget">
+                            <h2 class="ft__title">Newsletter</h2>
+                            <div class="newsletter__form">
+                                <div class="input__box">
+                                    <div id="mc_embed_signup">
+                                        <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                            <div id="mc_embed_signup_scroll" class="htc__news__inner">
+                                                <div class="news__input">
+                                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
                                                 </div>
-                                            </form>
-                                        </div>
+                                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                                <div class="clearfix subscribe__btn">
+                                                    <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
+
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- End Single Footer Widget -->
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-6 col-lg-3 col-sm-6 smt-30 xmt-30">
-                            <div class="ft__widget contact__us">
-                                <h2 class="ft__title">Contact Us</h2>
-                                <div class="footer__inner">
-                                    <p> 319 Clematis St. <br> Suite 100 WPB, FL 33401 </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Footer Widget -->
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-6 col-lg-2  col-sm-6 smt-30 xmt-30">
-                            <div class="ft__widget">
-                                <h2 class="ft__title">Follow Us</h2>
-                                <ul class="social__icon">
-                                    <li><a href="https://twitter.com/devitemsllc" target="_blank"><i class="zmdi zmdi-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/devitems/" target="_blank"><i class="zmdi zmdi-instagram"></i></a></li>
-                                    <li><a href="https://www.facebook.com/devitems/?ref=bookmarks" target="_blank"><i class="zmdi zmdi-facebook"></i></a></li>
-                                    <li><a href="https://plus.google.com/" target="_blank"><i class="zmdi zmdi-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End Single Footer Widget -->
                     </div>
-                </div>
-                <!-- Start Copyright Area -->
-                <div class="htc__copyright__area">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="copyright__inner">
-                                <div class="copyright">
-                                    <p>© 2022 Uniqlo. Made with <i class="ti-heart"></i> by <a target="_blank" href="https://www.hasthemes.com">HasThemes.</a></p>
-                                </div>
-                                <ul class="footer__menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="shop.html">Product</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
+                    <!-- End Single Footer Widget -->
+                    <!-- Start Single Footer Widget -->
+                    <div class="col-md-6 col-lg-3 col-sm-6 smt-30 xmt-30">
+                        <div class="ft__widget contact__us">
+                            <h2 class="ft__title">Contact Us</h2>
+                            <div class="footer__inner">
+                                <p> 319 Clematis St. <br> Suite 100 WPB, FL 33401 </p>
                             </div>
                         </div>
                     </div>
+                    <!-- End Single Footer Widget -->
+                    <!-- Start Single Footer Widget -->
+                    <div class="col-md-6 col-lg-2  col-sm-6 smt-30 xmt-30">
+                        <div class="ft__widget">
+                            <h2 class="ft__title">Follow Us</h2>
+                            <ul class="social__icon">
+                                <li><a href="https://twitter.com/devitemsllc" target="_blank"><i class="zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/devitems/" target="_blank"><i class="zmdi zmdi-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks" target="_blank"><i class="zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="https://plus.google.com/" target="_blank"><i class="zmdi zmdi-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Single Footer Widget -->
                 </div>
-                <!-- End Copyright Area -->
             </div>
-        </footer>
-        <!-- End Footer Area -->
+            <!-- Start Copyright Area -->
+            <div class="htc__copyright__area">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="copyright__inner">
+                            <div class="copyright">
+                                <p>© 2022 Uniqlo. Made with <i class="ti-heart"></i> by <a target="_blank" href="https://www.hasthemes.com">HasThemes.</a></p>
+                            </div>
+                            <ul class="footer__menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Product</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright Area -->
+        </div>
+    </footer>
+    <!-- End Footer Area -->
     </div>
     </div>
     <!-- Body main wrapper end -->
@@ -321,4 +329,3 @@
 </body>
 
 </html>
-    

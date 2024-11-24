@@ -1,12 +1,13 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
+@model List<Slider>
 
-<!-- DataTales Example -->
+
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Sliders</h6>
+        <a class="btn btn-primary" asp-controller="Slider" asp-action="Create">Yarat</a>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -18,17 +19,25 @@
                         <th>Title</th>
                         <th>Subtitle</th>
                         <th>Link</th>
-                        <th colspan="2">Action</th>
+                        <th colspan="3">Action</th>
                     </tr>
                 </thead>
-               
                 <tbody>
-                    
-               
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td><img src="~/imgs/sliders/@item.ImageUrl" width="70" /></td>
+                            <td>@item.Title</td>
+                            <td>@item.Subtitle</td>
+                            <td>@item.Link</td>
+                            <td><a class="btn btn-success" asp-controller="Slider" asp-action="Update" asp-route-id="@item.Id">Dəyiş</a></td>
+                            <td><a class="btn btn-danger" asp-controller="Slider" asp-action="Delete" asp-route-id="@item.Id">Sil</a></td>
+                            <td><a class="btn btn-warning" asp-controller="Slider" asp-action="Toggle" asp-route-id="@item.Id">Gizlət</a></td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
     </div>
-</div>
-
 </div>

@@ -1,19 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using UniqloTasks.DataAccess;
 using UniqloTasks.Models;
 using UniqloTasks.ViewModels.Sliders;
  
 namespace UniqloTasks.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class SliderController(UniqloDbContext _context ,IWebHostEnvironment _envr) : Controller
+    public class SliderController(UniqloDbContext _context, IWebHostEnvironment _env) : Controller
     {
-
-
         public async Task<IActionResult> Index()
         {
-
             return View(await _context.Sliders.ToListAsync());
         }
         public IActionResult Create()
@@ -36,7 +34,7 @@ namespace UniqloTasks.Areas.Admin.Controllers
             }
             string newFileName = Path.GetRandomFileName() + Path.GetExtension(vm.File.FileName);
 
-            using (Stream stream = System.IO.File.Create(Path.Combine(_envr.WebRootPath, "imgs", "sliders", newFileName)))
+            using (Stream stream = System.IO.File.Create(Path.Combine(_env.WebRootPath, "imgs", "sliders", newFileName)))
             {
                 await vm.File.CopyToAsync(stream);
             }

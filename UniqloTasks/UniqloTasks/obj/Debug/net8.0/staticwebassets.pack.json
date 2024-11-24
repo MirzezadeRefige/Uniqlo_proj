@@ -8329,12 +8329,28 @@
       "PackagePath": "staticwebassets\\assets\\style.css"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\1t52brjd.ahj.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\1t52brjd.ahj.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\kgprthvv.nsi.jpg",
+      "PackagePath": "staticwebassets\\imgs\\products\\kgprthvv.nsi.jpg"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\c1iw1ctr.zxm.jpg",
       "PackagePath": "staticwebassets\\imgs\\sliders\\c1iw1ctr.zxm.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\ljt5onwu.bpf.webp",
       "PackagePath": "staticwebassets\\imgs\\sliders\\ljt5onwu.bpf.webp"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\utanfilf.xp4.png",
+      "PackagePath": "staticwebassets\\imgs\\sliders\\utanfilf.xp4.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\zkebctop.rzu.webp",
+      "PackagePath": "staticwebassets\\imgs\\sliders\\zkebctop.rzu.webp"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UniqloTasks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
