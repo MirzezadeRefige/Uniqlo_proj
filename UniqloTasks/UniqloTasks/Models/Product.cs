@@ -18,5 +18,6 @@ public class Product : BaseEntity
     public int Discount { get; set; }
     public int? BrandId { get; set; }
     public Brand? Brand { get; set; }
+    public List<ProductImage> Images { get; internal set; }
     //public ICollection<ProductImage>? Images { get; set; }
 }

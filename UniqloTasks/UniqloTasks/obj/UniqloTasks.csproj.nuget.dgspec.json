@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\I Novbe\\Desktop\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj": {}
+    "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\I Novbe\\Desktop\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj": {
+    "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\I Novbe\\Desktop\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
         "projectName": "UniqloTasks",
-        "projectPath": "C:\\Users\\I Novbe\\Desktop\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
-        "packagesPath": "C:\\Users\\I Novbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\I Novbe\\Desktop\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\obj\\",
+        "projectPath": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\UniqloTasks.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\I Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,8 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -96,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
