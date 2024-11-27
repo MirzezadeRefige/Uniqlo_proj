@@ -68,5 +68,51 @@ namespace UniqloTasks.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id is null) return BadRequest();
+            var data = await _context.Products
+                .Where(x => x.Id == id)
+                .Select(x => new ProductUpdateVM
+                {
+                    Id = x.Id,
+                    BrandId = x.BrandId ?? 0,
+                    CostPrice = x.CostPrice,
+                    Description = x.Description,
+                    Discount = x.Discount,
+                    FileUrl = x.CoverImage,
+                    Name = x.Name,
+                    Quantity = x.Quantity,
+                    SellPrice = x.SellPrice,
+                    OtherFilesUrls = x.Images.Select(y => y.ImageUrl)
+                })
+                .FirstOrDefaultAsync();
+            if (data is null) return NotFound();
+            ViewBag.Categories = await _context.Brands.Where(x => !x.IsDeleted)
+                .ToListAsync();
+            return View(data);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(int? id, ProductUpdateVM vm)
+        {
+            var data = await _context.Products.Include(x => x.Images)
+                .Where(x => x.Id == id)
+                .FirstOrDefaultAsync();
+            data.Images.AddRange(vm.OtherFiles.Select(x => new ProductImage
+            {
+                ImageUrl = x.UploadAsync(_env.WebRootPath, "imgs", "products").Result
+            }).ToList());
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteImgs(int id, IEnumerable<string> imgNames)
+        {
+            int result = await _context.Images.Where(x => imgNames.Contains(x.ImageUrl)).ExecuteDeleteAsync();
+            if (result > 0)
+            {
+            }
+            return RedirectToAction(nameof(Update), new { id });
+        }
     }
 }

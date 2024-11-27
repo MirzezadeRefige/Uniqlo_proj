@@ -25008,6 +25008,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YFdJfXo/a6gZlxKDHB8AWt5o3Wk6JGm5oNNPnMlobm8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"57252"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022YFdJfXo/a6gZlxKDHB8AWt5o3Wk6JGm5oNNPnMlobm8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 27 Nov 2024 20:22:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/products/aejxyit4.0br.e1g01zg46a.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\products\aejxyit4.0br.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e1g01zg46a"},{"Name":"integrity","Value":"sha256-zqH51ph5GxKHyYedzSuBqfmfEVD\u002BaRSudPzgkdAfee8="},{"Name":"label","Value":"_content/UniqloTasks/imgs/products/aejxyit4.0br.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28407"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022zqH51ph5GxKHyYedzSuBqfmfEVD\u002BaRSudPzgkdAfee8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 27 Nov 2024 22:54:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/products/aejxyit4.0br.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\products\aejxyit4.0br.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zqH51ph5GxKHyYedzSuBqfmfEVD\u002BaRSudPzgkdAfee8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28407"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022zqH51ph5GxKHyYedzSuBqfmfEVD\u002BaRSudPzgkdAfee8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 27 Nov 2024 22:54:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/products/gqunrpta.j3j.1qac4emo1o.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\products\gqunrpta.j3j.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
