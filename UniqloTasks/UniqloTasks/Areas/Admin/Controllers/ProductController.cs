@@ -41,11 +41,11 @@ namespace UniqloTasks.Areas.Admin.Controllers
                     string fileNames = string.Join(',', vm.OtherFiles.Where(x => !x.IsValidType("image")).Select(x => x.FileName));
                     ModelState.AddModelError("OtherFiles", fileNames + " is (are) not an image");
                 }
-                //if (!vm.OtherFiles.All(x => x.IsValidSize(400)))
-                //{
-                //    string fileNames = string.Join(',', vm.OtherFiles.Where(x => !x.IsValidSize(400)).Select(x => x.FileName));
-                //    ModelState.AddModelError("OtherFiles", fileNames + " is (are) bigger than 400kb");
-                //}
+                if (!vm.OtherFiles.All(x => x.IsValidSize(400)))
+                {
+                    string fileNames = string.Join(',', vm.OtherFiles.Where(x => !x.IsValidSize(400)).Select(x => x.FileName));
+                    ModelState.AddModelError("OtherFiles", fileNames + " is (are) bigger than 400kb");
+                }
             }
             if (!ModelState.IsValid)
             {
