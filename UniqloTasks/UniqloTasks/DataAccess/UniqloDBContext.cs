@@ -11,5 +11,6 @@ namespace UniqloTasks.DataAccess
         public DbSet<ProductImage>? Images { get; set; }
 
         public UniqloDbContext(DbContextOptions opt) : base(opt) { }
-    }
+		
+	}
 }
