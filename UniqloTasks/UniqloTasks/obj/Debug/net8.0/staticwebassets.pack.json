@@ -8333,7 +8333,15 @@
       "PackagePath": "staticwebassets\\assets\\style.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\CodeAcademy\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\1t52brjd.ahj.webp",
+=======
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\0ugmk0da.t4k.jpg",
+      "PackagePath": "staticwebassets\\imgs\\products\\0ugmk0da.t4k.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\1t52brjd.ahj.webp",
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
       "PackagePath": "staticwebassets\\imgs\\products\\1t52brjd.ahj.webp"
     },
     {
@@ -8353,7 +8361,15 @@
       "PackagePath": "staticwebassets\\imgs\\products\\hqngi4ww.qk5.webp"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\CodeAcademy\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\k01sjgqr.al4.jpg",
+=======
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\jvtta3cg.dn0.jpg",
+      "PackagePath": "staticwebassets\\imgs\\products\\jvtta3cg.dn0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\k01sjgqr.al4.jpg",
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
       "PackagePath": "staticwebassets\\imgs\\products\\k01sjgqr.al4.jpg"
     },
     {
@@ -8393,7 +8409,15 @@
       "PackagePath": "staticwebassets\\imgs\\products\\we551bjf.hyc.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\CodeAcademy\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\a2q5ngyw.khe.webp",
+=======
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\products\\y5ctchlz.nzh.jpg",
+      "PackagePath": "staticwebassets\\imgs\\products\\y5ctchlz.nzh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\imgs\\sliders\\a2q5ngyw.khe.webp",
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
       "PackagePath": "staticwebassets\\imgs\\sliders\\a2q5ngyw.khe.webp"
     },
     {

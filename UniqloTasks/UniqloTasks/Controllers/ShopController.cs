@@ -1,17 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using System.Text.Json;
 using UniqloTasks.DataAccess;
 using UniqloTasks.ViewModels.Basket;
 using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
 using UniqloTasks.ViewModels.Shop;
+=======
+using UniqloTasks.DataAccess;
+using UniqloTasks.ViewModels.Brands;
+using UniqloTasks.ViewModels.Products;
+using UniqloTasks.ViewModels.Shops;
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
 
 namespace UniqloTasks.Controllers
 {
 	public class ShopController(UniqloDbContext _context) : Controller
 	{
 
+<<<<<<< HEAD
 		public async Task<IActionResult> Index(int? catID, string amount)
 		{
 			var query = _context.Products.AsQueryable();
@@ -20,6 +28,16 @@ namespace UniqloTasks.Controllers
 				query = query.Where(x => x.BrandId == catID);
 			}
 			if (amount != null)
+=======
+		public async Task<IActionResult> Index(int? catID,string amount)
+		{
+			var query = _context.Products.AsQueryable();
+			if (catID.HasValue) 
+			{
+				query = query.Where(x => x.BrandId == catID);
+			}
+			if (amount != null) 
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
 			{
 				var prices = amount.Split('-')
 					.Select(x => Convert.ToInt32(x));
@@ -46,6 +64,7 @@ namespace UniqloTasks.Controllers
 					Name = x.Name,
 					SellPrice = x.SellPrice
 				}).ToListAsync();
+<<<<<<< HEAD
 			vM.ProductCount = await query.CountAsync();
 			return View(vM);
 		}
@@ -92,3 +111,10 @@ namespace UniqloTasks.Controllers
 
 	}
 }
+=======
+			vM.ProductCount =await query.CountAsync();
+			return View(vM);
+		}
+	}
+}
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703

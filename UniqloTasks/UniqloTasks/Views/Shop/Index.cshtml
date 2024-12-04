@@ -1,4 +1,8 @@
 ﻿@model ShopVM
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
 @section style {
     <style>
         .cat-input:checked + label {
@@ -62,10 +66,17 @@
                                 </li>
                                 @foreach (var item in Model.Brands)
                                 {
+<<<<<<< HEAD
                                 <li>
                                     <input name="catId" class="d-none cat-input" type="radio" value="@item.Id" id="cat-@item.Id" />
                                     <label style="cursor:pointer" class="d-flex justify-content-between" for="cat-@item.Id">@item.Name <span>@item.Count</span></label>
                                 </li>
+=======
+                                    <li>
+                                        <input name="catId" class="d-none cat-input" type="radio" value="@item.Id" id="cat-@item.Id" />
+                                        <label style="cursor:pointer" class="d-flex justify-content-between" for="cat-@item.Id">@item.Name <span>@item.Count</span></label>
+                                    </li>
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
                                 }
                             </ul>
                         </div>
@@ -104,6 +115,7 @@
                     @foreach (var item in Model.Products)
                     {
                         <!-- Start Single Product -->
+<<<<<<< HEAD
                     <div class="col-md-4 col-lg-4 col-sm-12">
                         <div class="product">
                             <div class="product__inner">
@@ -141,6 +153,45 @@
                         </div>
                     </div>
  <!-- End Single Product -->
+=======
+                        <div class="col-md-4 col-lg-4 col-sm-12">
+                            <div class="product">
+                                <div class="product__inner">
+                                    <div class="pro__thumb">
+                                        <a href="#">
+                                            <img src="~/imgs/products/@item.CoverImage" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="product__hover__info">
+                                        <ul class="product__action">
+                                            <li><a title="Add To Cart" href="cart.html"><span class="ti-shopping-cart"></span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="add__to__wishlist">
+                                        <a data-bs-toggle="tooltip" title="Add To Wishlist" class="add-to-cart" href="wishlist.html"><span class="ti-heart"></span></a>
+                                    </div>
+                                </div>
+                                <div class="product__details">
+                                    <h2><a href="product-details.html">@item.Name</a></h2>
+                                    <ul class="product__price">
+                                        @if (item.Discount > 0)
+                                        {
+                                            <li class="old__price">$@item.SellPrice</li>
+                                            <li class="new__price">$@(item.SellPrice - item.SellPrice * item.Discount / 100)</li>
+                                        }
+                                        else
+                                        {
+                                            <li class="new__price">$@item.SellPrice</li>
+
+                                        }
+                                        @* <li class="old__price">$16.00</li>
+                                    <li class="new__price">$10.00</li> *@
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+>>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
                     }
                 </div>
                 <!-- End Single View -->
