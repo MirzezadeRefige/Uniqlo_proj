@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
+using UniqloTasks.Models;
 
 namespace UniqloTasks
 {
@@ -15,8 +17,18 @@ namespace UniqloTasks
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
             });
+            builder.Services.AddIdentity<User, IdentityRole>(opt =>
+            { 
+            opt.User.RequireUniqueEmail = true; 
+            opt.Password.RequiredLength = 5;
+				opt.Password.RequireDigit = false;
+				opt.Password.RequireLowercase = false;
+				opt.Password.RequireUppercase = false;
+				opt.Lockout.MaxFailedAccessAttempts = 2;
+                opt.Lockout.DefaultLockoutTimeSpan= TimeSpan.FromMinutes(5);
+			}).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqloDbContext>();
 
-
+            builder.Services.AddHttpContextAccessor();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

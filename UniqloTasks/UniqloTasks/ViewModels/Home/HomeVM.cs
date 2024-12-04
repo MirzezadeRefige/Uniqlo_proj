@@ -7,6 +7,9 @@ namespace UniqloTasks.ViewModels.Home
     public class HomeVM
     {
         public IEnumerable<SliderListItemVM> Sliders { get; set; }
-        public IEnumerable<ProductListItemVM> Products { get; set; }
-    }
+		public IEnumerable<ProductListItemVM> PopularProducts { get; set; }
+
+		public IEnumerable<Brand> Brands { get; set; }
+
+	}
 }
