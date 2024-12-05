@@ -1,47 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-<<<<<<< HEAD
 using System.Text.Json;
 using UniqloTasks.DataAccess;
 using UniqloTasks.ViewModels.Basket;
 using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
 using UniqloTasks.ViewModels.Shop;
-=======
+
 using UniqloTasks.DataAccess;
 using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
-using UniqloTasks.ViewModels.Shops;
->>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
 
 namespace UniqloTasks.Controllers
 {
 	public class ShopController(UniqloDbContext _context) : Controller
 	{
 
-<<<<<<< HEAD
-		public async Task<IActionResult> Index(int? catID, string amount)
+		 public async Task<IActionResult> Index(int? catId, string amount)
 		{
 			var query = _context.Products.AsQueryable();
-			if (catID.HasValue)
+			if (catId.HasValue)
 			{
-				query = query.Where(x => x.BrandId == catID);
+				query = query.Where(x => x.BrandId == catId);
 			}
 			if (amount != null)
-=======
-		public async Task<IActionResult> Index(int? catID,string amount)
-		{
-			var query = _context.Products.AsQueryable();
-			if (catID.HasValue) 
 			{
-				query = query.Where(x => x.BrandId == catID);
-			}
-			if (amount != null) 
->>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
-			{
-				var prices = amount.Split('-')
-					.Select(x => Convert.ToInt32(x));
-				query = query.Where(y => prices.ElementAt(0) <= y.SellPrice && prices.ElementAt(1) >= y.SellPrice);
+				var prices = amount.Split('-').Select(x => Convert.ToInt32(x));
+				query = query
+					.Where(y => prices.ElementAt(0) <= y.SellPrice && prices.ElementAt(1) >= y.SellPrice);
 			}
 			ShopVM vM = new ShopVM();
 			vM.Brands = await _context.Brands
@@ -54,7 +40,7 @@ namespace UniqloTasks.Controllers
 				})
 				.ToListAsync();
 			vM.Products = await query
-				.Take(5)
+				.Take(6)
 				.Select(x => new ProductListItemVM
 				{
 					CoverImage = x.CoverImage,
@@ -63,11 +49,12 @@ namespace UniqloTasks.Controllers
 					IsInStock = x.Quantity > 0,
 					Name = x.Name,
 					SellPrice = x.SellPrice
-				}).ToListAsync();
-<<<<<<< HEAD
+				})
+				.ToListAsync();
 			vM.ProductCount = await query.CountAsync();
 			return View(vM);
 		}
+
 		public async Task<IActionResult> AddBasket(int id)
 		{
 			var basket = getBasket();
@@ -91,30 +78,20 @@ namespace UniqloTasks.Controllers
 
 
 		}
-		List<BasketCokiesItemVM> getBasket() 
+		List<BasketCokiesItemVM> getBasket()
 		{
 			try
 			{
-				string value = HttpContext.Request.Cookies["basket"];
-				if (value is null)
-				{
-					return new();
-				}
+				string? value = HttpContext.Request.Cookies["basket"];
+				if (value is null) return new();
 				return JsonSerializer.Deserialize<List<BasketCokiesItemVM>>(value) ?? new();
 			}
 			catch (Exception)
 			{
-
 				return new();
 			}
 		}
 
 	}
 }
-=======
-			vM.ProductCount =await query.CountAsync();
-			return View(vM);
-		}
-	}
-}
->>>>>>> f2ff803b16bf6ed640bd6f993403a9f432cfb703
+		

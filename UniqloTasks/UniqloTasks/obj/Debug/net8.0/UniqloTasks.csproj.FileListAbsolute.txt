@@ -1085,10 +1085,13 @@ C:\Users\I Novbe\Desktop\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\re
 C:\Users\I Novbe\Desktop\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.pdb
 C:\Users\I Novbe\Desktop\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.genruntimeconfig.cache
 C:\Users\I Novbe\Desktop\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\ref\UniqloTasks.dll
+C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.staticwebassets.endpoints.json
+C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.UniqloTasks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\appsettings.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.staticwebassets.runtime.json
-C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.staticwebassets.endpoints.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.exe
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.deps.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\UniqloTasks.runtimeconfig.json
@@ -1097,6 +1100,7 @@ C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTask
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.Build.dll
@@ -1338,7 +1342,6 @@ C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTask
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
@@ -1361,9 +1364,7 @@ C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTask
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\scopedcss\bundle\UniqloTasks.styles.css
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.UniqloTasks.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.UniqloTasks.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.build.UniqloTasks.props
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UniqloTasks.props
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UniqloTasks.props
@@ -1374,4 +1375,4 @@ C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTask
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.pdb
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.genruntimeconfig.cache
 C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\ref\UniqloTasks.dll
-C:\Users\ACER\OneDrive\Masaüstü\CodeAcademy\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
