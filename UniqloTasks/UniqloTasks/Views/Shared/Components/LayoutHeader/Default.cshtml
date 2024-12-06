@@ -24,9 +24,9 @@
                                 <ul class="main__menu">
                                     <li><a asp-action="Index" asp-controller="Home">Home</a></li>
                                     <li><a asp-action="Index" asp-controller="Shop">Shop</a></li>
-                                    <li><a asp-action="About" asp-controller="Home">About</a></li>
-                                    <li><a href="contact.html">contact</a></li>
-                                </ul>
+                                    <li><a asp-action="Index" asp-controller="About">About</a></li>
+                                <li><a asp-action="Index" asp-controller="Contact">Contact</a></li>
+                            </ul>
                             </nav>
                             <div class="mobile-menu clearfix  d-block d-lg-none">
                                 <nav id="mobile_dropdown">
@@ -42,7 +42,16 @@
                         <!-- End MAinmenu Ares -->
                         <div class="col-md-2 col-lg-2 col-6">
                             <ul class="menu-extra">
-                                <li><a href="login-register.html"><span class="ti-user"></span></a></li>
+                            @if (Context.User.Identity.IsAuthenticated)
+                            {
+                                <li><a asp-action="Logout" asp-controller="Account"><span class="ti-shift-left"></span></a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-action="Login" asp-controller="Account"><span class="ti-user"></span></a></li>
+
+                            }
+
                                 <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
                             </ul>
                         </div>

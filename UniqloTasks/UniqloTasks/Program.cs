@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
 using UniqloTasks.Models;
+using UniqloTasks.Extentions; 
 
 namespace UniqloTasks
 {
@@ -25,15 +26,20 @@ namespace UniqloTasks
                 opt.Password.RequireLowercase = false;
                 opt.Password.RequireUppercase = false;
                 opt.Password.RequireNonAlphanumeric = false;
-                opt.Lockout.MaxFailedAccessAttempts = 1;
+                opt.Lockout.MaxFailedAccessAttempts = 2;
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqloDbContext>();
 
             builder.Services.AddHttpContextAccessor();
-            var app = builder.Build();
+            builder.Services.ConfigureApplicationCookie(y =>
+            {
+                y.LoginPath = "/login";
+                y.AccessDeniedPath = "/Home/AccessDenied";
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
+            });
+            var app = builder.Build();
+			// Configure the HTTP request pipeline.
+			if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
             }
@@ -41,7 +47,10 @@ namespace UniqloTasks
 
             app.UseRouting();
 
-			//app.UseAuthorization();
+
+			app.UseAuthorization();
+            app.UseUsersSeed();
+
 			app.MapControllerRoute(
 			  name: "login",
 			  pattern: "login", new

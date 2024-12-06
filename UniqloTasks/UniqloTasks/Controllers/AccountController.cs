@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using UniqloTasks.Extentions;
 using UniqloTasks.Models;
 using UniqloTasks.ViewModels.Auths;
+using UniqloTasks.Views.Account.Enums;
 
 namespace UniqloTasks.Controllers
 {
-	public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager) : Controller
+	public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager, RoleManager<IdentityRole> _roleManger) : Controller
 	{
 		public IActionResult Register()
 		{
@@ -34,11 +36,28 @@ namespace UniqloTasks.Controllers
 				}
 				return View();
 			}
-			if (!ModelState.IsValid) return View();
+			var roleResult = await _userManager.AddToRoleAsync(user, nameof(Roles.User));
+			if (!roleResult.Succeeded)
+			{
+				foreach (var err in roleResult.Errors)
+				{
+					ModelState.AddModelError("", err.Description);
+				}
+				return View();
+			}
+			//return View();
 			return RedirectToAction("Index", "Home");
 
 
 		}
+		//public async Task<IActionResult> roleMethod() 
+		//{
+		//	foreach (Roles item in Enum.GetValues(typeof(Roles)))
+		//	{
+		//		await _roleManger.CreateAsync(new IdentityRole(item.GetRole()));
+		//	}
+		//	return Ok();
+		//}
 
 
 		public async Task<IActionResult> Login()
@@ -46,7 +65,7 @@ namespace UniqloTasks.Controllers
 			return View();
 		}
 		[HttpPost]
-		public async Task<IActionResult> Login(LoginVM vm)
+		public async Task<IActionResult> Login(LoginVM vm, string? returnUrl = null)
 		{
 			if (!ModelState.IsValid) return View(vm);
 
@@ -83,7 +102,7 @@ namespace UniqloTasks.Controllers
 				{
 					ModelState.AddModelError("", "You must confirm your account");
 					//return RedirectToAction("Index", "Home");
-					return View(vm);
+					//return View(vm);
 
 
 				}
@@ -91,9 +110,16 @@ namespace UniqloTasks.Controllers
 
 				return View(vm);
 			}
-			return RedirectToAction("Index","Home");
-
+			if (string.IsNullOrWhiteSpace(returnUrl))
+			{
+				if (await _userManager.IsInRoleAsync(user, "Admin"))
+				{
+					return RedirectToAction("Index", new { Controller = "Dashboard", Area = "Admin" });
+				}
+				return RedirectToAction("Index", "Home");
+			}
+			return LocalRedirect(returnUrl);
 		}
-		
+
 	}
 }

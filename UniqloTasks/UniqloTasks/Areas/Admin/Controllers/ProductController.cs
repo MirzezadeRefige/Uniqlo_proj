@@ -6,11 +6,14 @@ using UniqloTasks.ViewModels;
 
 using UniqloTasks.ViewModels.Products;
 using UniqloTasks.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UniqloTasks.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class ProductController(IWebHostEnvironment _env, UniqloDbContext _context) : Controller
+	[Authorize]
+
+	public class ProductController(IWebHostEnvironment _env, UniqloDbContext _context) : Controller
     {
         public IActionResult Index()
         {
