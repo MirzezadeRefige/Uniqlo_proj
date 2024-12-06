@@ -7,9 +7,7 @@ using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
 using UniqloTasks.ViewModels.Shop;
 
-using UniqloTasks.DataAccess;
-using UniqloTasks.ViewModels.Brands;
-using UniqloTasks.ViewModels.Products;
+
 
 namespace UniqloTasks.Controllers
 {

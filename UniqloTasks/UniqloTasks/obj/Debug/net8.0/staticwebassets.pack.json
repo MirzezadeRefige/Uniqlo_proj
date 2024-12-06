@@ -8285,6 +8285,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\assets\\js\\login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\login.js"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },

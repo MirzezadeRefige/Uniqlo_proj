@@ -1,6 +1,8 @@
 ﻿@model RegisterVM
-@* @import url(https://fonts.googleapis.com/css?family=Roboto:300);
- *@
+
+@{
+    ViewData["Title"] = "Login";
+}
 <style>
 
     .login-page {
@@ -132,6 +134,7 @@
             <input asp-for="RePassword" placeholder="Repeat password" />
             <span asp-validation-for="RePassword" class="text-danger"></span>
             <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <p class="message">Have an account?<a asp-controller="account" asp-action="login">Login an account</a></p>
 
             <button>Register</button>
         </form>
