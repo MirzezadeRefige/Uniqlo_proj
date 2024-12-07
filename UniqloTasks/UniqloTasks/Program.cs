@@ -2,7 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
 using UniqloTasks.Models;
-using UniqloTasks.Extentions; 
+using UniqloTasks.Extentions;
+using UniqloTasks.Services.Abstractions;
+using UniqloTasks.Services.Concretes;
+using Microsoft.AspNetCore.Hosting;
 
 namespace UniqloTasks
 {
@@ -18,7 +21,9 @@ namespace UniqloTasks
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
             });
-            builder.Services.AddIdentity<User, IdentityRole>(opt =>
+            builder.Services.AddScoped<ISliderService,SliderService>();
+			
+			builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;
                 opt.Password.RequiredLength = 5;
@@ -49,7 +54,7 @@ namespace UniqloTasks
 
 
 			app.UseAuthorization();
-            app.UseUsersSeed();
+            //app.UseUsersSeed();
 
 			app.MapControllerRoute(
 			  name: "login",

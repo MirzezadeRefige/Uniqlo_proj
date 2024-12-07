@@ -4,7 +4,8 @@ using UniqloTasks.Views.Account.Enums;
 
 namespace UniqloTasks.Areas.Admin.Controllers
 {
-    [Area("Admin"), Authorize(Roles = nameof(Roles.Admin))]
+    [Area("Admin")]
+    //[Area("Admin"), Authorize(Roles = nameof(Roles.Admin))]
     public class DashboardController : Controller
     {
         public IActionResult Index()

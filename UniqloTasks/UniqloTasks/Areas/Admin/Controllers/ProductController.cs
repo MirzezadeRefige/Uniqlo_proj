@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace UniqloTasks.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	[Authorize]
+	//[Authorize]
 
 	public class ProductController(IWebHostEnvironment _env, UniqloDbContext _context) : Controller
     {

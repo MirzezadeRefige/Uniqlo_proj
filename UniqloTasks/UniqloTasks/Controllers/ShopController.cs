@@ -94,6 +94,10 @@ namespace UniqloTasks.Controllers
 		public async Task<IActionResult> Details(int? id)
 		{
 			if (!id.HasValue) return BadRequest();
+			if (!User.Identity.IsAuthenticated)
+			{
+				return RedirectToAction("Login", "Account");
+			}
 			var data = await _context.Products
 				.Include(x => x.Images)
 				.Include(x => x.ProductRatings)
