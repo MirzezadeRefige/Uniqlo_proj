@@ -330,6 +330,32 @@ namespace UniqloTasks.Migrations
                     b.ToTable("Images");
                 });
 
+            modelBuilder.Entity("UniqloTasks.Models.ProductRating", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RatingRate")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ProductRatings");
+                });
+
             modelBuilder.Entity("UniqloTasks.Models.Slider", b =>
                 {
                     b.Property<int>("Id")
@@ -454,6 +480,21 @@ namespace UniqloTasks.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("UniqloTasks.Models.ProductRating", b =>
+                {
+                    b.HasOne("UniqloTasks.Models.Product", "Product")
+                        .WithMany("ProductRatings")
+                        .HasForeignKey("ProductId");
+
+                    b.HasOne("UniqloTasks.Models.User", "User")
+                        .WithMany("ProductRatings")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UniqloTasks.Models.Brand", b =>
                 {
                     b.Navigation("Products");
@@ -462,6 +503,13 @@ namespace UniqloTasks.Migrations
             modelBuilder.Entity("UniqloTasks.Models.Product", b =>
                 {
                     b.Navigation("Images");
+
+                    b.Navigation("ProductRatings");
+                });
+
+            modelBuilder.Entity("UniqloTasks.Models.User", b =>
+                {
+                    b.Navigation("ProductRatings");
                 });
 #pragma warning restore 612, 618
         }

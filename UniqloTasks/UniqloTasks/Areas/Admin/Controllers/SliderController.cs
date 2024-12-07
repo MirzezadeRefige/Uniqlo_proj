@@ -3,13 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using UniqloTasks.DataAccess;
+using UniqloTasks.Helpers;
 using UniqloTasks.Models;
 using UniqloTasks.ViewModels.Sliders;
- 
+using UniqloTasks.Views.Account.Enums;
+
 namespace UniqloTasks.Areas.Admin.Controllers
 {
     [Area("Admin")]
-	[Authorize]
+	[Authorize(Roles =RoleConstants.Product)]
 
 	public class SliderController(UniqloDbContext _context, IWebHostEnvironment _env) : Controller
     {

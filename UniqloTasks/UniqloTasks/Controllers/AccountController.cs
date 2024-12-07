@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using UniqloTasks.Extentions;
 using UniqloTasks.Models;
@@ -9,17 +10,20 @@ namespace UniqloTasks.Controllers
 {
 	public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager, RoleManager<IdentityRole> _roleManger) : Controller
 	{
+		private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
 		public IActionResult Register()
 		{
+			if(isAuthenticated) return RedirectToAction("Index", "Home");
+
 			return View();
 		}
 
 		[HttpPost]
 		public async Task<IActionResult> Register(RegisterVM vm)
 		{
-			if (!ModelState.IsValid)
+			if (isAuthenticated) return RedirectToAction("Index", "Home");
 
-				return View();
+			if (!ModelState.IsValid) return View();
 			User user = new User
 			{
 				Fullname = vm.Username,
@@ -46,7 +50,7 @@ namespace UniqloTasks.Controllers
 				return View();
 			}
 			//return View();
-			return RedirectToAction("Index", "Home");
+			return RedirectToAction("Login", "Account");
 
 
 		}
@@ -62,11 +66,15 @@ namespace UniqloTasks.Controllers
 
 		public async Task<IActionResult> Login()
 		{
+			if (isAuthenticated) return RedirectToAction("Index", "Home");
+
 			return View();
 		}
 		[HttpPost]
 		public async Task<IActionResult> Login(LoginVM vm, string? returnUrl = null)
 		{
+			if (isAuthenticated) return RedirectToAction("Index", "Home");
+
 			if (!ModelState.IsValid) return View(vm);
 
 
@@ -110,6 +118,7 @@ namespace UniqloTasks.Controllers
 
 				return View(vm);
 			}
+
 			if (string.IsNullOrWhiteSpace(returnUrl))
 			{
 				if (await _userManager.IsInRoleAsync(user, "Admin"))
@@ -120,6 +129,11 @@ namespace UniqloTasks.Controllers
 			}
 			return LocalRedirect(returnUrl);
 		}
-
+		[Authorize]
+		public async Task<IActionResult> Logout()
+		{
+			await _signInManager.SignOutAsync();
+			return RedirectToAction(nameof(Login));
+		}
 	}
 }

@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using System.Text.Json;
 using UniqloTasks.DataAccess;
 using UniqloTasks.ViewModels.Basket;
@@ -14,7 +16,7 @@ namespace UniqloTasks.Controllers
 	public class ShopController(UniqloDbContext _context) : Controller
 	{
 
-		 public async Task<IActionResult> Index(int? catId, string amount)
+		public async Task<IActionResult> Index(int? catId, string amount)
 		{
 			var query = _context.Products.AsQueryable();
 			if (catId.HasValue)
@@ -89,7 +91,49 @@ namespace UniqloTasks.Controllers
 				return new();
 			}
 		}
+		public async Task<IActionResult> Details(int? id)
+		{
+			if (!id.HasValue) return BadRequest();
+			var data = await _context.Products
+				.Include(x => x.Images)
+				.Include(x => x.ProductRatings)
+				.Where(x => x.Id == id.Value && !x.IsDeleted).FirstOrDefaultAsync();
+			if (data == null) return NotFound();
+			string? userId = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier).Value;
+			if (userId is not null)
+			{
+				var rating = await _context.ProductRatings.Where(x => x.UserId == userId && x.ProductId == id).Select(x => x.RatingRate).FirstOrDefaultAsync();
+				ViewBag.Rating = rating == 0 ? 5 : rating;
+			}
+			else {
+				ViewBag.Rating = 5;
 
+			}
+			return View(data);
+		}
+		[Authorize]
+		public async Task<IActionResult> Rate(int? productId, int rate = 1)
+		{
+			if (!productId.HasValue) return BadRequest();
+			string UserId = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value;
+			if (!await _context.Products.AnyAsync(p => p.Id == productId)) return NotFound();
+			var rating = await _context.ProductRatings.Where(x => x.ProductId == productId && x.UserId == UserId).FirstOrDefaultAsync();
+			if (rating is null)
+			{
+				await _context.ProductRatings.AddAsync(new Models.ProductRating
+				{
+					ProductId = productId.Value,
+					RatingRate = rate,
+					UserId = UserId
+				});
+			}
+			else
+			{
+				rating.RatingRate = rate;
+			}
+
+			await _context.SaveChangesAsync();
+			return RedirectToAction(nameof(Details), new { id = productId });
+		}
 	}
 }
-		

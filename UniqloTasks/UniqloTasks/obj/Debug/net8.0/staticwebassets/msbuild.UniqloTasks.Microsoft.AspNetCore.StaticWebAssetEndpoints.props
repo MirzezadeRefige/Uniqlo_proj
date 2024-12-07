@@ -24996,17 +24996,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qz43fw7wn4"},{"Name":"integrity","Value":"sha256-Bps/8MDmwz4INo\u002BUkGrknsdqse1XCBnHaBSM7RWxOL8="},{"Name":"label","Value":"_content/UniqloTasks/assets/js/waypoints.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8051"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Bps/8MDmwz4INo\u002BUkGrknsdqse1XCBnHaBSM7RWxOL8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 29 Nov 2024 19:40:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/UniqloTasks/assets/style.4xkgpfvs1k.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4xkgpfvs1k"},{"Name":"integrity","Value":"sha256-6BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U="},{"Name":"label","Value":"_content/UniqloTasks/assets/style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"87216"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 20:17:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniqloTasks/assets/style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"87216"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00226BJ/vGINFFN0DLu/MiKr67I9X\u002Bf7\u002B3wlzrTpe5fC\u002B6U=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 20:17:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JMd98L8CoJn8QnYPXJ80K5V/A/C1gCSJMgFd8gB1jhU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"94574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JMd98L8CoJn8QnYPXJ80K5V/A/C1gCSJMgFd8gB1jhU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 07:17:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/UniqloTasks/assets/style.wrr12tygxt.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wrr12tygxt"},{"Name":"integrity","Value":"sha256-JMd98L8CoJn8QnYPXJ80K5V/A/C1gCSJMgFd8gB1jhU="},{"Name":"label","Value":"_content/UniqloTasks/assets/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"94574"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022JMd98L8CoJn8QnYPXJ80K5V/A/C1gCSJMgFd8gB1jhU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 07:17:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/UniqloTasks/imgs/products/0ugmk0da.t4k.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\imgs\products\0ugmk0da.t4k.jpg'))</AssetFile>

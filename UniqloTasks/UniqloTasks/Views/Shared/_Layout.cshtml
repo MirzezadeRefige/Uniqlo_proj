@@ -10,6 +10,8 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
     <!-- Bootstrap Fremwork Main Css -->
     <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
@@ -34,7 +36,7 @@
 @await Component.InvokeAsync("LayoutHeader")
     @RenderBody()
     <!-- Start Footer Area -->
-    <footer class="htc__foooter__area bg__cat--2 footer--4">
+    <footer id="ft" class="htc__foooter__area bg__cat--2 footer--4">
         <div class="container-fluid">
             <div class="footer__container clearfix">
                 <div class="row">
@@ -224,7 +226,7 @@
     <script src="~/assets/js/main.js"></script>
     <script src="~/assets/js//register.js"></script>
 
-
+    @await RenderSectionAsync("scripts", false);
 </body>
 
 </html>
