@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
+using UniqloTasks.Helpers;
 using UniqloTasks.Models;
 using UniqloTasks.Services.Concretes;
 using UniqloTasks.ViewModels.Sliders;
@@ -8,7 +10,7 @@ using UniqloTasks.ViewModels.Sliders;
 namespace UniqloTasks.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	//[Authorize(Roles =RoleConstants.Product)]
+	[Authorize(Roles = RoleConstants.Product)]
 
 	public class SliderController(UniqloDbContext _context, IWebHostEnvironment _env) : Controller
 	{

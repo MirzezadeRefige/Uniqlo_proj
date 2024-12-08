@@ -8,7 +8,7 @@ namespace UniqloTasks.Extentions
 {
 	public static class SeedExtention
 	{
-		public static void UseUsersSeed(this IApplicationBuilder app)
+		public static void UseUserSeed(this IApplicationBuilder app)
 		{
 			using (var scope = app.ApplicationServices.CreateScope())
 			{
@@ -24,25 +24,22 @@ namespace UniqloTasks.Extentions
 			{
 				foreach (Roles item in Enum.GetValues(typeof(Roles)))
 				{
-					var roleName = item.ToString();
 					await _roleManager.CreateAsync(new IdentityRole(item.GetRole()));
 				}
 			}
-			
 		}
 		private static async Task CreateUsers(UserManager<User> _userManager)
 		{
-			if (!await _userManager.Users.AnyAsync(u => u.NormalizedUserName == "ADMIN")) 
+			if (!await _userManager.Users.AnyAsync(u => u.NormalizedUserName == "ADMIN"))
 			{
 				User user = new User();
 				user.UserName = "admin";
-				user.Fullname = "admin";
 				user.Email = "admin@gmail.com";
+				user.Fullname = "admin";
 				string role = nameof(Roles.Admin);
-				await _userManager.CreateAsync(user, "123admin");
+				await _userManager.CreateAsync(user, "123");
 				await _userManager.AddToRoleAsync(user, role);
 			}
-			
 		}
 	}
 }

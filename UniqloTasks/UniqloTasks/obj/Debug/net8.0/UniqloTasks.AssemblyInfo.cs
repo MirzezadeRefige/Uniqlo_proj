@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniqloTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4799b19c42129be75cd29eae32b7b6b8f624400b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49ac9e9729ac94c0429252c5d26e519cd038f43f")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniqloTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniqloTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

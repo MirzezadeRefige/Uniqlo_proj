@@ -26,7 +26,7 @@ namespace UniqloTasks
 			builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;
-                opt.Password.RequiredLength = 5;
+                opt.Password.RequiredLength = 3;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;
                 opt.Password.RequireUppercase = false;
@@ -55,6 +55,7 @@ namespace UniqloTasks
 
 			app.UseAuthorization();
             //app.UseUsersSeed();
+            app.UseUserSeed();
 
 			app.MapControllerRoute(
 			  name: "login",

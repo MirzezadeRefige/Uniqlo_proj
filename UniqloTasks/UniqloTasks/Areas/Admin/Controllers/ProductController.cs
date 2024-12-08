@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
 using UniqloTasks.Extentions;
+using UniqloTasks.Helpers;
 using UniqloTasks.Models;
 using UniqloTasks.ViewModels.Products;
 
 namespace UniqloTasks.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	//[Authorize]
+	[Authorize(Roles = RoleConstants.Product)]
 
 	public class ProductController(IWebHostEnvironment _env, UniqloDbContext _context) : Controller
 	{
