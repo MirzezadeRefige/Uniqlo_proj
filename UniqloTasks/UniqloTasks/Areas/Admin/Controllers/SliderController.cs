@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using UniqloTasks.DataAccess;
 using UniqloTasks.Models;
-using UniqloTasks.Services.Abstractions;
 using UniqloTasks.Services.Concretes;
 using UniqloTasks.ViewModels.Sliders;
 
@@ -16,7 +15,7 @@ namespace UniqloTasks.Areas.Admin.Controllers
 		private readonly SliderService _sliderService;
 
 
-		
+
 
 		public async Task<IActionResult> Index()
 		{
@@ -65,15 +64,15 @@ namespace UniqloTasks.Areas.Admin.Controllers
 			return View(slider);
 		}
 		[HttpPost]
-		public async Task<IActionResult> Update(Slider slider) 
+		public async Task<IActionResult> Update(Slider slider)
 		{
 			if (!ModelState.IsValid)
 			{
 				foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
 				{
-					Console.WriteLine(error.ErrorMessage); 
+					Console.WriteLine(error.ErrorMessage);
 				}
-				return View(slider); 
+				return View(slider);
 			}
 			var sliderSelected = await _context.Sliders.FindAsync(slider.Id);
 			if (sliderSelected != null)
@@ -89,19 +88,32 @@ namespace UniqloTasks.Areas.Admin.Controllers
 			return View(slider);
 
 		}
-		public async Task<IActionResult> Delete(int id) 
+		public async Task<IActionResult> Delete(int id)
 		{
 			var slider = await _context.Sliders.FirstOrDefaultAsync(x => x.Id == id);
 			if (slider is not null)
 			{
-				_context.Sliders.Remove(slider);
+				//_context.Sliders.Remove(slider);
 				slider.IsDeleted = true;
 				await _context.SaveChangesAsync();
-				return RedirectToAction(nameof(Index)); // Uğurlu silinmə ilə Index səhifəsinə yönləndirmək
+				return RedirectToAction(nameof(Index));
 			}
 			return NotFound();
 		}
+		public async Task<IActionResult> Hide(int id)
+		{
+			var deletedSlider = await _context.Sliders.FirstOrDefaultAsync(x => x.IsDeleted);
+			if (deletedSlider is null) NotFound();
+			else
+			{
+				_context.Sliders.Remove(deletedSlider);
+				await _context.SaveChangesAsync();
+			}
+			
 
+			return RedirectToAction(nameof(Index));
+
+		}
 
 
 
