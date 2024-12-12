@@ -6,6 +6,9 @@ using UniqloTasks.Extentions;
 using UniqloTasks.Services.Abstractions;
 using UniqloTasks.Services.Concretes;
 using Microsoft.AspNetCore.Hosting;
+using UniqloTasks.Helpers;
+using UniqloTasks.Service.Abstracts;
+using UniqloTasks.Service.Implements;
 
 namespace UniqloTasks
 {
@@ -26,6 +29,7 @@ namespace UniqloTasks
 			builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;
+                opt.SignIn.RequireConfirmedEmail = true;
                 opt.Password.RequiredLength = 3;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;
@@ -34,7 +38,10 @@ namespace UniqloTasks
                 opt.Lockout.MaxFailedAccessAttempts = 2;
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqloDbContext>();
-
+            //builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            var opt = new SmtpOptions();
+            builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection(SmtpOptions.Name));
             builder.Services.AddHttpContextAccessor();
             builder.Services.ConfigureApplicationCookie(y =>
             {

@@ -1,19 +1,23 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using UniqloTasks.Extentions;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
 using UniqloTasks.Models;
+using UniqloTasks.Service.Abstracts;
 using UniqloTasks.ViewModels.Auths;
 using UniqloTasks.Views.Account.Enums;
 
 namespace UniqloTasks.Controllers
 {
-	public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager, RoleManager<IdentityRole> _roleManger) : Controller
+	public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager, RoleManager<IdentityRole> _roleManger, IEmailService _service) : Controller
 	{
+		
 		private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
 		public IActionResult Register()
 		{
-			if(isAuthenticated) return RedirectToAction("Index", "Home");
+			if (isAuthenticated) return RedirectToAction("Index", "Home");
 
 			return View();
 		}
@@ -49,9 +53,13 @@ namespace UniqloTasks.Controllers
 				}
 				return View();
 			}
-			//return View();
-			return RedirectToAction("Login", "Account");
+			string token =  await _userManager.GenerateEmailConfirmationTokenAsync(user);
+			_service.SendEmailConfirmation(user.Email, user.UserName, token);
+			return Content("Email sent!");
 
+
+			//return RedirectToAction("Login", "Account");
+			return View();
 
 		}
 		//public async Task<IActionResult> roleMethod() 
@@ -134,6 +142,25 @@ namespace UniqloTasks.Controllers
 		{
 			await _signInManager.SignOutAsync();
 			return RedirectToAction(nameof(Login));
+		}
+		public async Task<IActionResult> VerifyEmail(string token, string user)
+		{
+			var entity = await _userManager.FindByNameAsync(user);
+			if (entity is null) return BadRequest();
+			var result = await _userManager.ConfirmEmailAsync(entity, token);
+			if (!result.Succeeded) 
+			{
+			StringBuilder sb = new StringBuilder();
+				foreach (var item in result.Errors) 
+				{
+					sb.AppendLine(item.Description);	
+				}
+				return Content(sb.ToString());
+			}
+			await _signInManager.SignInAsync(entity, true);
+			return RedirectToAction("Index", "Home");
+
+		
 		}
 	}
 }
