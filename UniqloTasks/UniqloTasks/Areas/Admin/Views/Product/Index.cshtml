@@ -1,4 +1,5 @@
-﻿@model List<Product>
+﻿@using UniqloTasks.ViewModels.Commons
+@model List<Product>
 @{
     ViewData["Title"] = "Index";
 }
@@ -44,5 +45,7 @@
                 </tbody>
             </table>
         </div>
+                <partial name="_PaginationPartial" model="@(ViewBag.PaginationItems as PaginationItemsVM)">
+
     </div>
 </div>

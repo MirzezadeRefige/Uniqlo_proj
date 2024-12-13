@@ -1,4 +1,5 @@
-﻿@{
+﻿@using UniqloTasks.ViewModels.Commons
+@{
     ViewData["Title"] = "Index";
 }
 @model List<Slider>
@@ -33,11 +34,25 @@
                             <td>@item.Link</td>
                             <td><a class="btn btn-outline-info" asp-controller="Slider" asp-action="Update" asp-route-id="@item.Id">Update</a></td>
                             <td><a class="btn btn-outline-success" asp-controller="Slider" asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>
-                            <td><a class="btn btn-outline-dark" asp-controller="Slider" asp-action="Hide" asp-route-id="@item.Id">Hide</a></td>
+                            @if (item.IsDeleted == true)
+                            {
+                                <td>
+                                    <a class="btn btn-dark" asp-controller="Slider" asp-action="Hide" asp-route-id="@item.Id">Show</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <a class="btn btn-outline-dark" asp-controller="Slider" asp-action="Hide" asp-route-id="@item.Id">Hide</a>
+                                </td>
+                            }
+
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
+        <partial name="_PaginationPartial" model="ViewBag.Pagination as PaginationItemsVM" />
+
     </div>
 </div>

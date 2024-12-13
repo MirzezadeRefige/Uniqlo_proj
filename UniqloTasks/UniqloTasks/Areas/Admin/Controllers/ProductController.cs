@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using UniqloTasks.DataAccess;
 using UniqloTasks.Extentions;
 using UniqloTasks.Helpers;
 using UniqloTasks.Models;
+using UniqloTasks.ViewModels.Commons;
 using UniqloTasks.ViewModels.Products;
 
 namespace UniqloTasks.Areas.Admin.Controllers
@@ -16,12 +18,15 @@ namespace UniqloTasks.Areas.Admin.Controllers
 
 	public class ProductController(IWebHostEnvironment _env, UniqloDbContext _context) : Controller
 	{
-		public IActionResult Index()
+		public async Task<IActionResult> Index(int? page = 1, int? take = 4)
 		{
-			var products = _context.Products.Include(p => p.Brand).Where(p => !p.IsDeleted).ToList();
-
-			return View(products);
-			//return RedirectToAction(nameof(Create));
+			if (!page.HasValue) page = 1;
+			if (!take.HasValue) take = 4;
+			var query = _context.Products.Include(x => x.Brand).AsQueryable();
+			var data = await query.Skip(take.Value * (page.Value - 1)).Take(take.Value).ToListAsync();
+			int total = await query.CountAsync();
+			ViewBag.PaginationItems = new PaginationItemsVM(total, take.Value, page.Value);
+			return View(data);
 		}
 		public async Task<IActionResult> Create()
 		{
@@ -76,12 +81,17 @@ namespace UniqloTasks.Areas.Admin.Controllers
 		public async Task<IActionResult> Update(int? id)
 		{
 			if (id is null) return BadRequest();
+
+			ViewBag.Categories = new SelectList(
+				await _context.Brands.Where(x => !x.IsDeleted).ToListAsync(),
+				"Id", "Name");
+
 			var data = await _context.Products
 				.Where(x => x.Id == id)
 				.Select(x => new ProductUpdateVM
 				{
 					Id = x.Id,
-					BrandId = x.BrandId ?? 0,
+					BrandId = x.BrandId ?? 0,  
 					CostPrice = x.CostPrice,
 					Description = x.Description,
 					Discount = x.Discount,
@@ -89,27 +99,48 @@ namespace UniqloTasks.Areas.Admin.Controllers
 					Name = x.Name,
 					Quantity = x.Quantity,
 					SellPrice = x.SellPrice,
-					OtherFilesUrls = x.Images.Select(y => y.ImageUrl)
+					OtherFilesUrls = x.Images.Select(y => y.ImageUrl).ToList()  
 				})
 				.FirstOrDefaultAsync();
+
 			if (data is null) return NotFound();
-			ViewBag.Categories = await _context.Brands.Where(x => !x.IsDeleted)
-				.ToListAsync();
+
 			return View(data);
 		}
+
 		[HttpPost]
 		public async Task<IActionResult> Update(int? id, ProductUpdateVM vm)
 		{
+			if (id == null || vm == null)
+			{
+				return BadRequest();
+			}
+
 			var data = await _context.Products.Include(x => x.Images)
 				.Where(x => x.Id == id)
 				.FirstOrDefaultAsync();
-			data.Images.AddRange(vm.OtherFiles.Select(x => new ProductImage
+
+			if (data == null)
 			{
-				ImageUrl = x.UploadAsync(_env.WebRootPath, "imgs", "products").Result
-			}).ToList());
+				return NotFound();
+			}
+			data.Name = vm.Name;
+			data.Description = vm.Description;
+			data.CostPrice = vm.CostPrice;
+			data.SellPrice=vm.SellPrice;
+			data.Quantity = vm.Quantity;
+			if (vm.OtherFiles != null && vm.OtherFiles.Any())
+			{
+				data.Images.AddRange(vm.OtherFiles.Select(x => new ProductImage
+				{
+					ImageUrl = x.UploadAsync(_env.WebRootPath, "imgs", "products").Result
+				}).ToList());
+			}
+
 			await _context.SaveChangesAsync();
 			return RedirectToAction(nameof(Index));
 		}
+
 		[HttpPost]
 		public async Task<IActionResult> DeleteImgs(int id, IEnumerable<string> imgNames)
 		{

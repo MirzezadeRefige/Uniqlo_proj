@@ -19,7 +19,7 @@ namespace UniqloTasks.Areas.Admin.Controllers
 
 
 
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index(int? page = 1, int? take = 2)
 		{
 			return View(await _context.Sliders.ToListAsync());
 		}

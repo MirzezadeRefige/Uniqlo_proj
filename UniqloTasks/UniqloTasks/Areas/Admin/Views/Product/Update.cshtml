@@ -9,7 +9,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Product create</h6>
     </div>
     <div class="card-body">
-        <form id="islepls" enctype="multipart/form-data" method="post">
+        <form id="islepls" enctype="multipart/form-data" method="post" asp-action="Update" asp-controller="Product">
             <div class="form-group">
                 <label asp-for="Name"></label>
                 <input class="form-control" asp-for="Name">
@@ -29,15 +29,6 @@
                 <span class="text-danger" asp-validation-for="File"></span>
             </div>
             <div class="form-group">
-                <form asp-action="DeleteImgs" asp-controller="Product" method="post" class="d-flex" style="gap:10px">
-                    @foreach (var item in Model.OtherFilesUrls ?? [])
-                    {
-                        <input class="d-none del-img-input" type="checkbox" value="@item" name="imgNames" id="@item" />
-                        <label class="del-img-label" for="@item"><img width="80px" src="~/imgs/products/@item" /></label>
-                    }
-                    <button asp-action="DeleteImgs" asp-controller="Product" asp-route-id="@Model.Id" class="btn btn-danger">Delete</button>
-                </form>
-                <br />
                 <label asp-for="OtherFiles">Other images</label>
                 <input accept="image/*" class="form-control" asp-for="OtherFiles">
                 <span class="text-danger" asp-validation-for="OtherFiles"></span>
@@ -62,18 +53,19 @@
             <div class="form-row">
                 <div class="col">
                     <label asp-for="Quantity"></label>
-                    <input class="form-control" asp-for="Quantity">
+                    <input class="form-control" asp-for="Quantity" type="number" min="0">
                     <span class="text-danger" asp-validation-for="Quantity"></span>
                 </div>
                 <div class="col">
                     <label asp-for="BrandId">Brands</label>
-                    <select class="form-control" asp-for="BrandId" asp-items='new SelectList(ViewBag.Categories,"Id","Name")'>
+                    <select class="form-control" asp-for="BrandId" asp-items="ViewBag.Categories">
                         <option disabled selected>Select brand</option>
                     </select>
+
                     <span class="text-danger" asp-validation-for="BrandId"></span>
                 </div>
             </div>
-            <button onclick="$('#islepls').submit()" type="submit" class="btn btn-primary my-2">Submit</button>
+            <button type="submit" class="btn btn-primary my-2">Submit</button>
         </form>
     </div>
 </div>
