@@ -8,13 +8,18 @@ using UniqloTasks.ViewModels.Basket;
 using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
 using UniqloTasks.ViewModels.Shop;
-
-
+using UniqloTasks.ViewModels.Shop;
 
 namespace UniqloTasks.Controllers
 {
-	public class ShopController(UniqloDbContext _context) : Controller
+	public class ShopController : Controller
 	{
+		private readonly UniqloDbContext _context;
+
+		public ShopController(UniqloDbContext context)
+		{
+			_context = context;
+		}
 
 		public async Task<IActionResult> Index(int? catId, string amount)
 		{
@@ -55,64 +60,77 @@ namespace UniqloTasks.Controllers
 			return View(vM);
 		}
 
+		// Add item to basket (cookie-based)
+		// Add item to basket (cookie-based)
 		public async Task<IActionResult> AddBasket(int id)
 		{
-			var basket = getBasket();
+			var basket = GetBasketFromCookie(); // Get the basket from the cookies
 			var item = basket.FirstOrDefault(x => x.Id == id);
-			if (item != null) item.Count++;
+
+			if (item != null)
+				item.Count++;  // Increment item count
 			else
 			{
-				basket.Add(new BasketCokiesItemVM
-				{
-					Id = id,
-					Count = 1
-				});
+				basket.Add(new BasketCokiesItemVM { Id = id, Count = 1 });  // Add new item to basket
 			}
+
+			// Serialize the basket and save it back to the cookies
 			string data = JsonSerializer.Serialize(basket);
 			HttpContext.Response.Cookies.Append("basket", data);
 			return Ok();
 		}
-		public async Task<IActionResult> GetBasket(int id)
+
+		// Get basket items
+		public async Task<IActionResult> GetBasket()
 		{
-			return Json(getBasket());
-
-
+			return Json(GetBasketFromCookie());  // Get basket data from cookies and return it
 		}
-		List<BasketCokiesItemVM> getBasket()
+
+		// Helper function to get basket from cookies
+		private List<BasketCokiesItemVM> GetBasketFromCookie()
 		{
 			try
 			{
 				string? value = HttpContext.Request.Cookies["basket"];
-				if (value is null) return new();
-				return JsonSerializer.Deserialize<List<BasketCokiesItemVM>>(value) ?? new();
+				if (value == null) return new List<BasketCokiesItemVM>();  // Return empty list if no basket exists
+				return JsonSerializer.Deserialize<List<BasketCokiesItemVM>>(value) ?? new List<BasketCokiesItemVM>();  // Deserialize the basket
 			}
 			catch (Exception)
 			{
-				return new();
+				return new List<BasketCokiesItemVM>();  // Return empty list in case of an error
 			}
 		}
+
+
 		public async Task<IActionResult> Details(int? id)
 		{
 			if (!id.HasValue) return BadRequest();
 			if (!User.Identity.IsAuthenticated)
-			{
 				return RedirectToAction("Login", "Account");
-			}
+
 			var data = await _context.Products
 				.Include(x => x.Images)
 				.Include(x => x.ProductRatings)
-				.Where(x => x.Id == id.Value && !x.IsDeleted).FirstOrDefaultAsync();
+				.Where(x => x.Id == id.Value && !x.IsDeleted)
+				.FirstOrDefaultAsync();
+
 			if (data == null) return NotFound();
-			string? userId = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier).Value;
-			if (userId is not null)
+
+			string? userId = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+			if (userId != null)
 			{
-				var rating = await _context.ProductRatings.Where(x => x.UserId == userId && x.ProductId == id).Select(x => x.RatingRate).FirstOrDefaultAsync();
+				var rating = await _context.ProductRatings
+					.Where(x => x.UserId == userId && x.ProductId == id)
+					.Select(x => x.RatingRate)
+					.FirstOrDefaultAsync();
+
 				ViewBag.Rating = rating == 0 ? 5 : rating;
 			}
-			else {
+			else
+			{
 				ViewBag.Rating = 5;
-
 			}
+
 			return View(data);
 		}
 		[Authorize]
