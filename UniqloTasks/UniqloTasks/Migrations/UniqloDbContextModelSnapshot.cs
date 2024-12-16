@@ -252,6 +252,36 @@ namespace UniqloTasks.Migrations
                     b.ToTable("Brands");
                 });
 
+            modelBuilder.Entity("UniqloTasks.Models.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("UniqloTasks.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -460,6 +490,23 @@ namespace UniqloTasks.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("UniqloTasks.Models.Comment", b =>
+                {
+                    b.HasOne("UniqloTasks.Models.Product", "Product")
+                        .WithMany("Comments")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UniqloTasks.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UniqloTasks.Models.Product", b =>
                 {
                     b.HasOne("UniqloTasks.Models.Brand", "Brand")
@@ -502,6 +549,8 @@ namespace UniqloTasks.Migrations
 
             modelBuilder.Entity("UniqloTasks.Models.Product", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Images");
 
                     b.Navigation("ProductRatings");

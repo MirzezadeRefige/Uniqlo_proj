@@ -1,5 +1,27 @@
 ﻿@model List<BasketItemVM>
 
+<style>
+    .product-controls {
+        display: flex; 
+        align-items: center;
+        gap: 10px;
+    }
+
+        .product-controls form {
+            margin: 0; 
+        }
+
+    .quantity {
+        font-size: 16px; 
+        font-weight: bold;
+    }
+
+    .btn {
+        padding: 5px 10px; 
+        font-size: 14px; 
+    }
+</style>
+
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -80,16 +102,34 @@
                             </a>
                         </div>
                         <div class="shp__pro__details">
-                            <h2><a href="product-details.html">@item.Name</a></h2>
-                            <span class="quantity">QTY: @item.Count</span>
-                            <span class="shp__price">$@(item.SellPrice * item.Count)</span>
-                        </div>
-                        <div class="remove__btn">
-                            <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                        </div>
-                    </div>
+                            <h2>
+                                <a asp-controller="Shop" asp-action="Detail" asp-route-id="@item.Id">
+                                    @item.Name
+                                </a>
+                            </h2>
+                            <div class="product-controls">
+                                <form asp-controller="Shop" asp-action="RemoveBasket" method="post">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <button type="submit" class="btn btn-outline-secondary">-</button>
+                                </form>
 
+                                <span class="quantity">QTY: @item.Count</span>
+
+                                <form asp-controller="Shop" asp-action="AddBasket" method="post">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <button type="submit" class="btn btn-outline-secondary">+</button>
+                                </form>
+                            </div>
+
+                            <span class="shp__price">$@(item.SellPrice * item.Count)</span>
+
+                            
+                        </div>
+                       
+                    </div>
                 }
+
+
                    
                 </div>
                 <ul class="shoping__total">

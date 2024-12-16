@@ -8281,6 +8281,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\test\\client\\3.png"
     },
     {
+      "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\assets\\images\\userprofil.png",
+      "PackagePath": "staticwebassets\\assets\\images\\userprofil.png"
+    },
+    {
       "Id": "C:\\Users\\ACER\\OneDrive\\Masaüstü\\Uniqlo_proj\\UniqloTasks\\UniqloTasks\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
     },

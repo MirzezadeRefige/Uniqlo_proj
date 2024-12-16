@@ -518,7 +518,6 @@ C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.RazorAssemblyInfo.cache
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.RazorAssemblyInfo.cs
-C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.sourcelink.json
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.dll
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\refint\UniqloTasks.dll
 C:\Users\ACER\OneDrive\Masaüstü\Uniqlo_proj\UniqloTasks\UniqloTasks\obj\Debug\net8.0\UniqloTasks.pdb

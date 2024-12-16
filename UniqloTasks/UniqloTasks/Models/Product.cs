@@ -21,5 +21,6 @@ public class Product : BaseEntity
     public List<ProductImage>? Images { get; internal set; }
     //public ICollection<ProductImage>? Images { get; set; }
     public ICollection<ProductRating>? ProductRatings { get; set; }
+	public ICollection<Comment>? Comments { get; set; }
 
 }

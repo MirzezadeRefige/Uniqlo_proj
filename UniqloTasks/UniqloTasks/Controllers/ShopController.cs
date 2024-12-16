@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Text.Json;
 using UniqloTasks.DataAccess;
+using UniqloTasks.Models;
 using UniqloTasks.ViewModels.Basket;
 using UniqloTasks.ViewModels.Brands;
 using UniqloTasks.ViewModels.Products;
-using UniqloTasks.ViewModels.Shop;
 using UniqloTasks.ViewModels.Shop;
 
 namespace UniqloTasks.Controllers
@@ -15,10 +16,13 @@ namespace UniqloTasks.Controllers
 	public class ShopController : Controller
 	{
 		private readonly UniqloDbContext _context;
+		private readonly UserManager<User> _userManager;
 
-		public ShopController(UniqloDbContext context)
+
+		public ShopController(UniqloDbContext context, UserManager<User> userManager)
 		{
 			_context = context;
+			_userManager = userManager;
 		}
 
 		public async Task<IActionResult> Index(int? catId, string amount)
@@ -60,47 +64,68 @@ namespace UniqloTasks.Controllers
 			return View(vM);
 		}
 
-		// Add item to basket (cookie-based)
-		// Add item to basket (cookie-based)
+	
 		public async Task<IActionResult> AddBasket(int id)
 		{
-			var basket = GetBasketFromCookie(); // Get the basket from the cookies
+			var basket = getBasket();
 			var item = basket.FirstOrDefault(x => x.Id == id);
-
 			if (item != null)
-				item.Count++;  // Increment item count
+				item.Count++;
 			else
 			{
-				basket.Add(new BasketCokiesItemVM { Id = id, Count = 1 });  // Add new item to basket
+				basket.Add(new BasketCokiesItemVM
+				{
+					Id = id,
+					Count = 1
+				});
 			}
-
-			// Serialize the basket and save it back to the cookies
 			string data = JsonSerializer.Serialize(basket);
 			HttpContext.Response.Cookies.Append("basket", data);
+			return RedirectToAction("Index", "Home"); 
+
 			return Ok();
+
 		}
 
-		// Get basket items
 		public async Task<IActionResult> GetBasket()
 		{
-			return Json(GetBasketFromCookie());  // Get basket data from cookies and return it
+			return Json(getBasket());
 		}
-
-		// Helper function to get basket from cookies
-		private List<BasketCokiesItemVM> GetBasketFromCookie()
+		List<BasketCokiesItemVM> getBasket()
 		{
 			try
 			{
 				string? value = HttpContext.Request.Cookies["basket"];
-				if (value == null) return new List<BasketCokiesItemVM>();  // Return empty list if no basket exists
-				return JsonSerializer.Deserialize<List<BasketCokiesItemVM>>(value) ?? new List<BasketCokiesItemVM>();  // Deserialize the basket
+				if (value is null) return new();
+				return JsonSerializer.Deserialize<List<BasketCokiesItemVM>>(value) ?? new();
 			}
 			catch (Exception)
 			{
-				return new List<BasketCokiesItemVM>();  // Return empty list in case of an error
+				return new();
 			}
 		}
 
+		[HttpPost]
+		public async Task<IActionResult> RemoveBasket(int id)
+		{
+			var basket = getBasket();
+			var item = basket.FirstOrDefault(x => x.Id == id); 
+
+			if (item != null)
+			{
+				item.Count--; 
+
+				if (item.Count <= 0)
+				{
+					basket.Remove(item); 
+				}
+			}
+
+			string data = JsonSerializer.Serialize(basket);
+			HttpContext.Response.Cookies.Append("basket", data);
+
+			return RedirectToAction("Index", "Home"); 
+		}
 
 		public async Task<IActionResult> Details(int? id)
 		{
@@ -130,7 +155,15 @@ namespace UniqloTasks.Controllers
 			{
 				ViewBag.Rating = 5;
 			}
+			var product = await _context.Products
+		  .Include(p => p.Comments)
+		  .FirstOrDefaultAsync(p => p.Id == id);
 
+			if (product == null) return NotFound();
+			var UserId = _userManager.GetUserId(User); 
+			ViewBag.UserId = userId; 
+
+			//return View(product);
 			return View(data);
 		}
 		[Authorize]
@@ -156,6 +189,26 @@ namespace UniqloTasks.Controllers
 
 			await _context.SaveChangesAsync();
 			return RedirectToAction(nameof(Details), new { id = productId });
+		}
+		[HttpPost]
+		public IActionResult AddComment(int productId, int userId, string text)
+		{
+			if (string.IsNullOrEmpty(text))
+			{
+				return BadRequest("Comment can't be empty.");
+			}
+
+			var comment = new Comment
+			{
+				Text = text,
+				UserId = userId,
+				ProductId = productId
+			};
+
+			_context.Comments.Add(comment);
+			_context.SaveChanges();
+
+			return RedirectToAction("Details", new { id = productId });
 		}
 	}
 }

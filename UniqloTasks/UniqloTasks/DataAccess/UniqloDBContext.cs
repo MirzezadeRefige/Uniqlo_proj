@@ -14,6 +14,7 @@ namespace UniqloTasks.DataAccess
 		public DbSet<ProductImage>? Images { get; set; }
 		public DbSet<User> Users { get; set; }
 		public DbSet<ProductRating>? ProductRatings { get; set; }
+		public DbSet<Comment>? Comments { get; set; }
 
 
 
