@@ -152,7 +152,6 @@ namespace UniqloTasks.Areas.Admin.Controllers
 		}
 		public async Task<IActionResult> Delete(int id)
 		{
-			// Məhsulu əlaqəli məlumatlarla birlikdə yükləyirik
 			var product = await _context.Products
 				.Include(p => p.ProductRatings) // ProductRatings əlaqəli cədvəli yüklə
 				.FirstOrDefaultAsync(p => p.Id == id);
@@ -174,7 +173,30 @@ namespace UniqloTasks.Areas.Admin.Controllers
 			return RedirectToAction(nameof(Index));
 		}
 
+		public async Task<IActionResult> Hide(int id)
+		{
+			var product = _context.Products.FirstOrDefault(s => s.Id == id);
+			if (product != null)
+			{
+				product.IsDeleted = true;
+				await _context.SaveChangesAsync();
+			}
+			return RedirectToAction(nameof(Index));
 
+		}
+		public async Task<IActionResult> Show(int id)
+		{
+			var slide = _context.Products.FirstOrDefault(s => s.Id == id);
+			if (slide == null)
+			{
+				
+				return NotFound();
+			}
 
+			slide.IsDeleted = false;
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction(nameof(Index));
+		}
 	}
 }

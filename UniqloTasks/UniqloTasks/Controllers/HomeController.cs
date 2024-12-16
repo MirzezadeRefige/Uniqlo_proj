@@ -13,8 +13,9 @@ namespace UniqloTasks.Controllers
 
 		public async Task<IActionResult> Index()
 		{
+
 			HomeVM vm = new HomeVM();
-			vm.Sliders = await _context.Sliders.Select(x => new SliderListItemVM
+			vm.Sliders = await _context.Sliders.Where(s => !s.IsDeleted).Select(x => new SliderListItemVM
 			{
 
 				ImgUrl = x.ImageUrl,

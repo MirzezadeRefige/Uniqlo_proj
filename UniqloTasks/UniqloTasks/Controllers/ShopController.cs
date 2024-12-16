@@ -27,7 +27,7 @@ namespace UniqloTasks.Controllers
 
 		public async Task<IActionResult> Index(int? catId, string amount)
 		{
-			var query = _context.Products.AsQueryable();
+			var query = _context.Products.Where(x => !x.IsDeleted).AsQueryable();
 			if (catId.HasValue)
 			{
 				query = query.Where(x => x.BrandId == catId);

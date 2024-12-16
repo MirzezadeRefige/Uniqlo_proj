@@ -21,6 +21,7 @@ namespace UniqloTasks.Areas.Admin.Controllers
 
 		public async Task<IActionResult> Index(int? page = 1, int? take = 2)
 		{
+
 			return View(await _context.Sliders.ToListAsync());
 		}
 		public IActionResult Create()
@@ -95,8 +96,7 @@ namespace UniqloTasks.Areas.Admin.Controllers
 			var slider = await _context.Sliders.FirstOrDefaultAsync(x => x.Id == id);
 			if (slider is not null)
 			{
-				//_context.Sliders.Remove(slider);
-				slider.IsDeleted = true;
+				_context.Sliders.Remove(slider);
 				await _context.SaveChangesAsync();
 				return RedirectToAction(nameof(Index));
 			}
@@ -104,18 +104,30 @@ namespace UniqloTasks.Areas.Admin.Controllers
 		}
 		public async Task<IActionResult> Hide(int id)
 		{
-			var deletedSlider = await _context.Sliders.FirstOrDefaultAsync(x => x.IsDeleted);
-			if (deletedSlider is null) NotFound();
-			else
+			var slide = _context.Sliders.FirstOrDefault(s => s.Id == id);
+			if (slide != null)
 			{
-				_context.Sliders.Remove(deletedSlider);
-				await _context.SaveChangesAsync();
+				slide.IsDeleted = true;
+				_context.SaveChanges();
 			}
-			
-
 			return RedirectToAction(nameof(Index));
 
 		}
+		public async Task<IActionResult> Show(int id) 
+		{
+			var slide = _context.Sliders.FirstOrDefault(s => s.Id == id);
+			if (slide == null)
+			{
+				Console.WriteLine($"Slide with ID {id} not found.");
+				return NotFound();
+			}
+
+			slide.IsDeleted = false;
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction(nameof(Index));
+		}
+
 
 
 
